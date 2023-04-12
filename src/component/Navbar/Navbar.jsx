@@ -24,26 +24,26 @@ const Navbar = () => {
                     <ul className='items-center hidden space-x-8 lg:flex'>
                         <li>
                             <NavLink
-                                to='/'
+                                to='/statistic'
                                 className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
                             >
-                                Home
+                                    Statistic
                             </NavLink>
                         </li>
                         <li>
                             <NavLink
-                                to='/books'
+                                to='/applied'
                                 className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
                             >
-                                Books
+                                Applied Jobs
                             </NavLink>
                         </li>
                         <li>
                             <NavLink
-                                to='/about'
+                                to='/blogs'
                                 className={({ isActive }) => (isActive ? 'text-blue-600' : 'default')}
                             >
-                                About us
+                                Blogs
                             </NavLink>
                         </li>
                     </ul>
@@ -70,7 +70,7 @@ const Navbar = () => {
                                         <Link to='/' className='inline-flex items-center'>
                                             <BoltIcon className='h-6 w-6 text-blue-500' />
                                             <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                                                nextPage
+                                                Dream-Career
                                             </span>
                                         </Link>
                                     </div>
@@ -103,7 +103,7 @@ const Navbar = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                to='/about'
+                                                to='/blogs'
                                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                                             >
                                                 Blogs

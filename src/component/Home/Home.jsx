@@ -1,10 +1,14 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
+import HeadSec from '../HeadSec/HeadSec';
+import { Outlet } from 'react-router-dom';
+import FeatureJobs from '../FeatureJobs/FeatureJobs';
 
 const Home = () => {
     return (
-        <div>
-           <Navbar></Navbar>
+        <div className='bg-gray-50'>
+           <HeadSec></HeadSec>
+           <FeatureJobs></FeatureJobs>
         </div>
     );
 };
