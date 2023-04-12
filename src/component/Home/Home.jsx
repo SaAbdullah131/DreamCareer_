@@ -6,7 +6,7 @@ import FeatureJobs from '../FeatureJobs/FeatureJobs';
 
 const Home = () => {
     return (
-        <div className='bg-gray-50'>
+        <div className='bg-gray-50 mt-2'>
            <HeadSec></HeadSec>
            <FeatureJobs></FeatureJobs>
         </div>

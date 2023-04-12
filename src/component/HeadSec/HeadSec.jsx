@@ -23,7 +23,7 @@ const HeadSec = () => {
                         </div>
                     </Link>
                     <Link
-                        to='/about'
+                        to='/blogs'
                         className='inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-blue-700'
                     >
                         Learn More

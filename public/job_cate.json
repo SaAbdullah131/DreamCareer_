@@ -7,7 +7,7 @@
         "available_jobs": "10 Available jobs"
       },
       {
-        "id": "1",
+        "id": "2",
         "job_title": "Data Analyst",
         "img": "https://example.com/images/data-analyst.jpg",
         "available_jobs": "5 Jobs Available"
@@ -19,7 +19,7 @@
         "available_jobs": "3 Available Jobs"
       },
       {
-        "id": "3",
+        "id": "4",
         "job_title": "UX Designer",
         "img": "https://example.com/images/ux-designer.jpg",
         "available_jobs": "7 Available Jobs"
