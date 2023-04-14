@@ -1,8 +1,7 @@
 import React from 'react';
-import { getStoredJobs } from '../../Utils/fakedDB';
+
 
 const Answer = () => {
-    const jobs = getStoredJobs();
     return (
         <div>
             <h1 className='text-center text-2xl underline text-accent p-3'>Question Answering</h1>

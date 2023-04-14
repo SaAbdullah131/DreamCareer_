@@ -15,6 +15,7 @@ const Job = (props) => {
                 <p className='text-blue-400 border-2 border-blue-500 px-3 py-1'>{job_type}</p>
                 <p className='text-blue-400 border-2 border-blue-500 px-3 py-1'>{site}</p>
             </div>
+            
             <div className='flex gap-4 items-center ml-2 mb-1'>
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-5 text-purple-400">
