@@ -7,6 +7,8 @@ import Home from './component/Home/Home';
 import ErrorPage from './component/ErrorPage/ErrorPage';
 import Statistic from './component/Statistic/Statistic';
 import DetailsJob from './component/DetailsJob/DetailsJob';
+import Answering from './component/Answering/Answer'
+import AppliedJobs from './component/AppliedJobs/AppliedJobs';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,11 +39,16 @@ const router = createBrowserRouter([
       },
       {
         path:'applied',
-        element: <h2>Applied Jobs</h2>
+        element: <AppliedJobs></AppliedJobs>,
+        loader:async()=>{
+          const res  = await fetch('/jobs.json');
+          const data = await res.json();
+          return data;
+        }
       },
       {
         path:'blogs',
-        element: <h3>Blog Here</h3>
+        element:<Answering></Answering>
       }
     ]
   },

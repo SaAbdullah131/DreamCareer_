@@ -1,8 +1,12 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { addToDb } from '../../Utils/fakedDB';
 const DetailsJob = () => {
     const details = useLoaderData();
-    console.log(details.id);
+    // console.log(details.id);
+    const handleAppliedJob=(id)=>{
+        addToDb(id);
+    }
     return (
         <div>
             <h1 className='bg-violet-100 text-3xl text-black font-bold text-center py-10 px-5 mt-4 mb-4 gap-5'>Job Details</h1>
@@ -35,7 +39,7 @@ const DetailsJob = () => {
                     <p className='text-md font-semibold'>Phone: {details.phone}</p>
                     <p className='text-md font-semibold'>Email: {details.email}</p>
                     <p className='text-md font-semibold'>Address: {details.address}</p>
-                    <button class=" btn bg-blue-500 hover:bg-blue-700 text-white font-bold w-full py-2 rounded-lg mt-4">Apply Now</button>
+                    <button class=" btn bg-blue-500 hover:bg-blue-700 text-white font-bold w-full py-2 rounded-lg mt-4"onClick={()=>handleAppliedJob(details.id)}>Apply Now</button>
                 </div>
 
             </div>

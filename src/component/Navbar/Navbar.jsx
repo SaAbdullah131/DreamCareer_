@@ -21,7 +21,7 @@ const Navbar = () => {
 
                 {/* Nav Items Section */}
                 <div>
-                    <ul className='items-center hidden space-x-8 lg:flex'>
+                    <ul className='items-center hidden space-x-8 lg:flex text-black font-semibold'>
                         <li>
                             <NavLink
                                 to='/statistic'
@@ -68,7 +68,7 @@ const Navbar = () => {
                                 <div className='flex items-center justify-between mb-4'>
                                     <div>
                                         <Link to='/' className='inline-flex items-center'>
-                                
+
                                             <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
                                                 Dream-Career
                                             </span>
