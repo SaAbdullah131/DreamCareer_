@@ -5,7 +5,7 @@ import Job from '../Job/Job';
 
 const Jobs = () => {
     const jobsLoad = useLoaderData();
-     console.log(jobsLoad);
+    //  console.log(jobsLoad);
 //    const jobsLoadFirst = jobsLoad.splice(0,4);
 //    console.log(jobsLoadFirst);
     return (
