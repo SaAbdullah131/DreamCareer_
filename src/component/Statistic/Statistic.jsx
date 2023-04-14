@@ -1,37 +1,84 @@
 import React from 'react';
-import { PieChart, Pie, Legend, Tooltip, ResponsiveContainer } from 'recharts';
+import {
+  ComposedChart,
+  Line,
+  Area,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from 'recharts';
+
+const data = [
+  {
+    name: 'Page A',
+    uv: 590,
+    pv: 800,
+    amt: 1400,
+  },
+  {
+    name: 'Page B',
+    uv: 868,
+    pv: 967,
+    amt: 1506,
+  },
+  {
+    name: 'Page C',
+    uv: 1397,
+    pv: 1098,
+    amt: 989,
+  },
+  {
+    name: 'Page D',
+    uv: 1480,
+    pv: 1200,
+    amt: 1228,
+  },
+  {
+    name: 'Page E',
+    uv: 1520,
+    pv: 1108,
+    amt: 1100,
+  },
+  {
+    name: 'Page F',
+    uv: 1400,
+    pv: 680,
+    amt: 1700,
+  },
+];
+
 
 const Statistic = () => {
-    const data01 = [
-        { name: 'Assignment', value: 400 },
-        { name: 'Group B', value: 300 },
-        { name: 'Group C', value: 300 },
-        { name: 'Group D', value: 200 },
-        { name: 'Group E', value: 278 },
-        { name: 'Group F', value: 189 },
-    ];
-    return (
-       <div className='mt-10 mx-auto'>
-        <ResponsiveContainer width="100%" height="100%">
-            <PieChart width={400} height={400}>
-                <Pie
-                    dataKey="value"
-                    isAnimationActive={false}
-                    data={data01}
-                    cx="50%"
-                    cy="50%"
-                    outerRadius={80}
-                    fill="#8884d8"
-                    label
-                />
-                <Pie dataKey="value" data={data01} cx={500} cy={200} innerRadius={40} outerRadius={80} fill="#82ca9d" />
-                <Tooltip />
-                <Legend></Legend>
-            </PieChart>
-        </ResponsiveContainer>
-        <h2>Oi kia kaj kortesos ken?</h2>
-       </div>
-    );
-};
+
+  return (
+    <div className='bg-base-500 w-full h-full mt-5 p-5'>
+      <h1 className='text-center'>Hello Chart</h1>
+      <ResponsiveContainer width='100%' height='100%'>
+        <ComposedChart
+          width={500}
+          height={400}
+          data={data}
+          margin={{
+            top: 20,
+            right: 20,
+            bottom: 20,
+            left: 20,
+          }}>
+          <CartesianGrid stroke="#f5f5f5" />
+          <XAxis dataKey="name" scale="band"></XAxis>
+          <YAxis></YAxis>
+          <Tooltip></Tooltip>
+          <Legend />
+          <Bar dataKey="uv" barSize={20} fill="#413ea0" />
+        </ComposedChart>
+      </ResponsiveContainer>
+    </div>
+
+  );
+}
 
 export default Statistic;

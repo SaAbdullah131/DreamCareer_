@@ -1,0 +1,63 @@
+[
+    {
+    "id": "1",
+    "logo_img": "https://i.ibb.co/2stRbBn/google.png",
+    "job_title": "Software Engineer",
+    "company_name": "Google LLC",
+    "job_type": "Full-time",
+    "site"    :"Onsite",
+    "location": "San Francisco, CA",
+    "salary": "Salary: $120,000 - $150,000"
+   },
+   {
+    "id": "2",
+    "logo_img": "https://i.ibb.co/hCnqQJ4/Tesla.png",
+    "job_title": "Ai Engineer",
+    "company_name": "Tesla Inc",
+    "job_type": "Full-time",
+    "site"    :"Remote",
+    "location": "San Francisco, CA",
+    "salary": "$120,000 - $150,000"
+   },
+   {
+    "id": "3",
+    "logo_img": "https://i.ibb.co/Kj4yz0B/ibm.png",
+    "job_title": "Cloud architect",
+    "company_name": "IBM",
+    "job_type": "Full-time",
+    "site"    :"Onsite",
+    "location": "San Francisco, CA",
+    "salary": "$120,000 - $150,000"
+   },
+   {
+    "id": "4",
+    "logo_img": "https://i.ibb.co/JqDJnk0/airbnb.png",
+    "job_title": "Marketing Manager",
+    "company_name": "Airbnb",
+    "job_type": "Full-time",
+    "site"    :"Onsite",
+    "location": "San Francisco, CA",
+    "salary": "$120,000 - $150,000"
+   },
+   {
+    "id": "5",
+    "logo_img": "https://i.ibb.co/NNW3wpf/amazon.png",
+    "job_title": "Product Manager",
+    "company_name": "Amazon",
+    "job_type": "Full-time",
+    "site"    :"Onsite",
+    "location": "San Diego, CA",
+    "salary": "$120,000 - $150,000"
+   },
+   {
+    "id": "6",
+    "logo_img": "https://i.ibb.co/FhDXFpN/netflix.png",
+    "job_title": "Web Application Developer",
+    "company_name": "NetFlix",
+    "job_type": "Full-time",
+    "site"    :"Remote",
+    "location": "Dallas, TX",
+    "salary": "$120,000 - $150,000"
+   }
+  
+]
