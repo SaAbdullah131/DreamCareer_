@@ -12,7 +12,7 @@ const FeatureJobs = () => {
 
     return (
         <div className='mt-5 bg-slate-100'>
-            <h2 className='text-center text-2xl font-bold text-black mb-2'>Job Category List</h2>
+            <h2 className='text-center text-2xl font-bold text-black mb-5 mt-5 p-5'>Job Category List</h2>
             <div className='sm:grid md:grid-cols-4 sm:gap-4 gap-5 p-15'>
                {
                jobsCategory.map(jobCategory=><CategoryJobs key={jobCategory.id} job={jobCategory}></CategoryJobs>)
