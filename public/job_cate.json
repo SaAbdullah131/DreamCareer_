@@ -3,25 +3,25 @@
       {
         "id": "1",
         "job_title": "Web Developer",
-        "img": "https://example.com/images/web-developer.jpg",
+        "img": "https://i.ibb.co/9sDd8BB/wd.jpg",
         "available_jobs": "10 Available jobs"
       },
       {
         "id": "2",
         "job_title": "Data Analyst",
-        "img": "https://example.com/images/data-analyst.jpg",
+        "img": "https://i.ibb.co/f9466Dx/data.png",
         "available_jobs": "5 Jobs Available"
       },
       {
         "id": "3",
         "job_title": "Marketing Manager",
-        "img": "https://example.com/images/marketing-manager.jpg",
+        "img": "https://i.ibb.co/Q8cmmdb/ui.png",
         "available_jobs": "3 Available Jobs"
       },
       {
         "id": "4",
         "job_title": "UX Designer",
-        "img": "https://example.com/images/ux-designer.jpg",
+        "img": "https://i.ibb.co/1QRh8xx/marketing.png",
         "available_jobs": "7 Available Jobs"
       }
     ]
