@@ -5,7 +5,7 @@ const SingleAppliedJobs = (props) => {
     return (
         <div>
 
-            <div className='flex gap-5 items-center py-3 mb-5 bg-violet-100'>
+            <div className='flex gap-5 items-center justify-around py-3 mb-5 bg-violet-100'>
                 <img className='object-contain w-[35%] h-[30%] center rounded-xl' src={logo_img} alt="" />
                 <div>
                     <h2 className='text-2xl ml-2'>{job_title}</h2>
@@ -28,7 +28,7 @@ const SingleAppliedJobs = (props) => {
                 </div>
 
                 <div>
-                    <button class=" btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded-lg bottom-0 ">View Details</button>
+                    <button class=" btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-4 rounded-lg">View Details</button>
                 </div>
             </div>
 

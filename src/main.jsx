@@ -7,9 +7,9 @@ import Home from './component/Home/Home';
 import ErrorPage from './component/ErrorPage/ErrorPage';
 import Statistic from './component/Statistic/Statistic';
 import DetailsJob from './component/DetailsJob/DetailsJob';
-import Answering from './component/Answering/Answer'
 import AppliedJobs from './component/AppliedJobs/AppliedJobs';
 import { allData } from './loaders/getAllData';
+import Blogs from './component/Blogs/Blogs';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path:'blogs',
-        element:<Answering></Answering>
+        element:<Blogs></Blogs>
       }
     ]
   },
