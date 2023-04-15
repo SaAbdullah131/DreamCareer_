@@ -6,19 +6,29 @@ import Job from '../Job/Job';
 const Jobs = () => {
     const jobsLoad = useLoaderData();
     //  console.log(jobsLoad);
-//    const jobsLoadFirst = jobsLoad.splice(0,4);
-//    console.log(jobsLoadFirst);
+    //    const jobsLoadFirst = jobsLoad.splice(0,4);
+    //    console.log(jobsLoadFirst);
+    const [firstTimeJobs, setFirstJobs] = useState(jobsLoad.slice(0, 4));
+    const [showClick, setShowClick] = useState(true);
+
+    const clickShowAll = () => {
+        setFirstJobs(jobsLoad);
+        setShowClick(false)
+    }
     return (
         <div>
             <h2 className='text-center text-2xl font-bold text-black mb-2 p-3 mt-10'>Featured Jobs</h2>
             <p className='text-center text-lg mt-2 mb-4 py-2'>Explore Thousands of job opportunities with all the  information that you need to know to jump..</p>
-            <div className='sm:grid grid-cols-2 gap-4 mt-4 mb-3 p-5 relative'>
-                {
-                    jobsLoad.map(job=><Job
-                    key={job.id}
-                    job={job}
-                    ></Job>)
-                }
+            <div className=' flex flex-col justify-center items-center'>
+                <div className='sm:grid grid-cols-2 gap-4 mt-4 mb-3 p-5 relative'>
+                    {
+                        firstTimeJobs.map(job => <Job
+                            key={job.id}
+                            job={job}
+                        ></Job>)
+                    }
+                </div>
+                <button onClick={() => clickShowAll()} className={`${clickShowAll ? 'inline-block' : 'hidden'} inline-block btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded-lg bottom-0`}>View Details</button>
             </div>
         </div>
     );

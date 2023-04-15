@@ -5,4 +5,3 @@ This is Job Portal ,Where anyone can find relavent jobs and apply through this p
 
 
 ## Some Key Feature of this Platfrom
-
