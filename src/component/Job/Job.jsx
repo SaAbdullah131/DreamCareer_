@@ -28,7 +28,7 @@ const Job = (props) => {
                 </svg>
                 <h4 className='text-semibold text-lg'>Salary: {salary}</h4>
             </div>
-            <Link to={`/details/${id}`}><button class=" btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded-lg bottom-0 ">View Details</button></Link>
+            <Link to={`/details/${id}`}><button class=" btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded-lg">View Details</button></Link>
         </div>
     );
 };

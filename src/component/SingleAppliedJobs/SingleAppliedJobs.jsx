@@ -4,11 +4,6 @@ const SingleAppliedJobs = (props) => {
     const { logo_img, job_title, company_name, location, job_type, site, salary } = props.job;
     return (
         <div>
-              <select name="site" id="site" className='bg-violet-100 mb-4 px-5 py-3 place-self-start'>
-               <option value="" disabled selected>Filter</option>
-                <option value="Onsite">Onsite</option>
-                <option value="Remote">Remote</option>
-             </select>
                
             <div className='flex gap-5 items-center justify-around py-3 mb-5 bg-violet-100'>
                 <img className='object-contain w-[35%] h-[30%] center rounded-xl' src={logo_img} alt="" />
