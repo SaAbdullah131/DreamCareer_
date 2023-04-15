@@ -28,7 +28,7 @@ const Jobs = () => {
                         ></Job>)
                     }
                 </div>
-                <button onClick={() => clickShowAll()} className={`${showClick ? 'inline-block' : 'hidden'} inline-block btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-3 rounded-lg  bottom-0 mt-2`}>Show All</button>
+                <button onClick={() => clickShowAll()} className={`${showClick ? 'inline-block' : 'hidden'} inline-block btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-3 rounded-lg  bottom-0 mt-2`}>Show All Jobs</button>
             </div>
         </div>
     );
